@@ -4,7 +4,7 @@ def format_mac_address(mac_address):
 
     # Verify proper MAC address length (should be 12)
     if len(mac_address) != 12:
-        return "Invalid MAC address. Please enter a 12-character MAC address."
+        return "Invalid MAC address length. Please enter a 12-character MAC address."
 
     # Format the MAC address in different patterns
     patterns = [
