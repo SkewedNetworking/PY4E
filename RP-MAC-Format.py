@@ -19,7 +19,6 @@ def format_mac_address(mac_address):
     # Return the formatted MAC addresses
     return '\n'.join(patterns)
 
-# Get MAC address input from the user
 print("\nUtilize this program to take a MAC address and convert it into various formats. \nUseful for taking a MAC address and having a list of various MAC-formats to input into various monitoring systems / searches.\nFormats returned are:\n\n\txx:xx:xx:xx:xx:xx\n\txxxx:xxxx:xxxx\n\txx-xx-xx-xx-xx-xx\n\txxxx-xxxx-xxxx\n\txx.xx.xx.xx.xx.xx\n\txxxx.xxxx.xxxx\n\nWhen you are ready to exit the program, type 'exit'.\n")
 
 #Enter infinite loop
