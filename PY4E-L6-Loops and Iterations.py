@@ -19,11 +19,18 @@ while True:
         break
 
     try:
-        num = int(num)
+        #Way to test if the value entered is a number. If the user enters characters, it will fail and proceed to the 'except' portion.
+        num = int(num) 
+
+        #If 'largest' variable is None (as initiated) OR 'num' greater than current 'largest' variable it will:
+        #   Update the 'largest' variable with value in 'num'
         if largest is None or num > largest:
             largest = num
+        #If 'smallest' variable is None (as initiated) OR 'num' is less than current 'smallest' variable it will:
+        #   Update the 'smallest' variable with value in 'num's
         if smallest is None or num < smallest:
             smallest = num
+    #If user enters a non-integer value, it will fail and print out an error.
     except ValueError:
         print("Invalid input")
 
